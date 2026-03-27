@@ -395,6 +395,9 @@ main .section.navy-blue a:any-link {
 /* Dark section */
 main .section.dark {
   background-color: var(--color-black);
+  background-image: url('/content/images/squiggle-bg.jpeg');
+  background-size: cover;
+  background-position: center;
   margin: 0;
   padding: var(--spacing-l) 0;
 }
@@ -404,7 +407,10 @@ main .section.dark h2,
 main .section.dark h3,
 main .section.dark h4,
 main .section.dark h5,
-main .section.dark h6,
+main .section.dark h6 {
+  color: #4a4a4a;
+}
+
 main .section.dark p,
 main .section.dark li {
   color: var(--color-white);
