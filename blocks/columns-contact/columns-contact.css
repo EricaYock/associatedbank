@@ -1,0 +1,33 @@
+.columns-contact > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-contact img {
+  width: 100%;
+}
+
+.columns-contact > div > div {
+  order: 1;
+}
+
+.columns-contact > div > .columns-contact-img-col {
+  order: 0;
+}
+
+.columns-contact > div > .columns-contact-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-contact > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-contact > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

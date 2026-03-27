@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-link",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-27T16:56:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.associatedbank.com/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "navigation-links",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + description + arrow",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": ["text-only linked cards on dark backgrounds", "navigation card grids"],
+    "notSuitableFor": ["cards with images", "article cards"]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-27T16:56:00.000Z"
+  }
+}

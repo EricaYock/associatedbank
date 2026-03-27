@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-pricing",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-27T17:05:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.associatedbank.com/personal/personal-checking",
+    "originPage": "personal checking product page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "pricing-comparison",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "label + heading + benefits list + fee details + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": ["product pricing cards", "plan comparison cards", "tier comparison layouts"],
+    "notSuitableFor": ["image-heavy cards", "simple article teasers"]
+  },
+  "usage": {
+    "pagesUsing": ["/personal/personal-checking"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-27T17:05:00.000Z"
+  }
+}

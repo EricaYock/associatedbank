@@ -1,0 +1,31 @@
+{
+  "variantName": "columns-announcement",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-27T16:56:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.associatedbank.com/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "announcement-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + link | image",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": ["announcement banners with text and logo", "merger/news announcements"],
+    "notSuitableFor": ["feature promos with CTAs", "contact sections"]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-27T16:56:00.000Z"
+  }
+}

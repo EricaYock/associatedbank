@@ -1,0 +1,31 @@
+{
+  "variantName": "table-comparison",
+  "baseBlock": "table",
+  "version": "1.0.0",
+  "created": "2026-03-27T17:05:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.associatedbank.com/personal/personal-checking",
+    "originPage": "personal checking product page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "product-comparison",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "header row + feature rows with checkmarks and values",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": ["product comparison tables", "feature comparison grids", "pricing matrices"],
+    "notSuitableFor": ["simple data tables", "lists"]
+  },
+  "usage": {
+    "pagesUsing": ["/personal/personal-checking"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-27T17:05:00.000Z"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-benefit",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-27T17:05:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.associatedbank.com/personal/personal-checking",
+    "originPage": "personal checking product page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "benefits-grid",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon + heading + description paragraph as linked items",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": ["feature benefit grids", "icon + text card layouts", "linked benefit items"],
+    "notSuitableFor": ["image-heavy cards", "pricing tables"]
+  },
+  "usage": {
+    "pagesUsing": ["/personal/personal-checking"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-27T17:05:00.000Z"
+  }
+}
