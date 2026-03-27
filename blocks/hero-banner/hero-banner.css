@@ -1,3 +1,8 @@
+/* Hero Banner - full-width background image with white content card overlay */
+.hero-banner-container {
+  margin: 0;
+}
+
 .hero-banner-container .hero-banner-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,23 +10,30 @@
 
 .hero-banner {
   position: relative;
+  background-color: var(--color-green);
   padding: 40px 24px;
-  min-height: 300px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.hero-banner h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+/* Image row - positioned as full-bleed background */
+.hero-banner > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  max-width: none;
+  margin: 0;
 }
 
 .hero-banner picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-banner img {
@@ -30,8 +42,61 @@
   height: 100%;
 }
 
+/* Text row - white content card overlay */
+.hero-banner > div:last-child {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: 32px;
+  max-width: 480px;
+  margin: 0 auto 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner h1 {
+  color: var(--color-green);
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+  line-height: 1.17;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.hero-banner p {
+  color: var(--color-gray-dark);
+  font-size: 22px;
+  line-height: 1.27;
+  margin-bottom: 16px;
+}
+
+.hero-banner p.button-container {
+  margin-top: 20px;
+}
+
+.hero-banner a.button:any-link {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  border-radius: var(--button-border-radius);
+  color: var(--color-white);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  min-width: 277px;
+  padding: 10px 8px;
+  text-decoration: none;
+}
+
 @media (width >= 900px) {
   .hero-banner {
-    padding: 40px 32px;
+    padding: 40px;
+    min-height: 450px;
+  }
+
+  .hero-banner > div:last-child {
+    padding: 40px;
+    max-width: 520px;
+  }
+
+  .hero-banner h1 {
+    font-size: 36px;
   }
 }
