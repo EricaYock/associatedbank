@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "http://localhost:8765/homepage-backup/cleaned.html",
+  "path": "homepage-backup/cleaned",
+  "timestamp": "2026-03-27T17:53:46.869Z",
+  "title": "Personal Banking - Associated Bank",
+  "template": "homepage",
+  "blocks": [
+    "hero-banner",
+    "cards-product",
+    "columns-announcement",
+    "cards-link",
+    "columns-feature",
+    "columns-contact",
+    "cards-article"
+  ]
+}

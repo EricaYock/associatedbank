@@ -10,66 +10,109 @@
  * governing permissions and limitations under the License.
  */
 
+/* fallback fonts */
+@font-face {
+  font-family: metropolis-fallback;
+  size-adjust: 99%;
+  src: local('Arial');
+}
+
+@font-face {
+  font-family: besley-fallback;
+  size-adjust: 105%;
+  src: local('Georgia');
+}
+
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
-  --overlay-background-color:lightgrey;
+  /* colors - primary palette */
+  --color-green: #007a2f;
+  --color-dark-green: #00441a;
+  --color-blue: #12207b;
+  --color-navy: #1d4f91;
+  --color-teal: #8ad2d5;
+  --color-lime: #aad04e;
+
+  /* colors - neutrals */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-dark: #595959;
+  --color-gray-medium: #666;
+  --color-gray-light: #ececec;
+  --color-gray-bg: #d1d1d1;
+
+  /* semantic colors */
+  --background-color: var(--color-white);
+  --light-color: var(--color-gray-light);
+  --dark-color: var(--color-gray-dark);
+  --text-color: var(--color-gray-dark);
+  --heading-color: var(--color-gray-medium);
+  --heading-color-primary: var(--color-green);
+  --link-color: var(--color-green);
+  --link-hover-color: var(--color-dark-green);
+  --overlay-background-color: var(--color-gray-light);
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: metropolis, metropolis-fallback, sans-serif;
+  --heading-font-family: metropolis, metropolis-fallback, sans-serif;
+  --serif-font-family: besley, besley-fallback, georgia, serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-l: 20px;
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  /* heading sizes - mobile first */
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 26px;
+  --heading-font-size-l: 22px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
 
   /* nav heights */
   --nav-height: 64px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
-}
 
-/* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
+  /* spacing */
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 20px;
+  --spacing-l: 40px;
+  --spacing-xl: 60px;
+  --spacing-xxl: 80px;
 
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  /* layout */
+  --content-max-width: 1200px;
+  --section-padding-inline: 24px;
+
+  /* buttons */
+  --button-font-size: 20px;
+  --button-font-weight: 700;
+  --button-padding: 10px 8px;
+  --button-border-radius: 7px;
+  --button-min-width: 228px;
+  --button-transition: 0.15s ease-in-out;
+
+  /* transitions */
+  --transition-fast: 0.15s ease-in-out;
+  --transition-base: 0.2s ease-in-out;
+
+  /* focus */
+  --focus-outline: 2px solid var(--color-blue);
+  --focus-outline-offset: 2px;
 }
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-xxl: 36px;
+    --heading-font-size-xl: 28px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
+    --section-padding-inline: 32px;
   }
 }
 
@@ -80,7 +123,8 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 body.appear {
@@ -107,6 +151,7 @@ footer .footer[data-block-status="loaded"] {
   }
 }
 
+/* headings */
 h1,
 h2,
 h3,
@@ -116,18 +161,33 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--heading-color);
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  line-height: 1.17;
+  color: var(--heading-color-primary);
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  line-height: 1.23;
+}
+
+h3 {
+  font-size: var(--heading-font-size-m);
+  line-height: 1.25;
+}
+
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
+/* body elements */
 p,
 dl,
 ol,
@@ -151,6 +211,21 @@ pre {
   white-space: pre;
 }
 
+/* lists */
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 700;
+}
+
 main > div {
   margin: 40px 16px;
 }
@@ -165,13 +240,21 @@ button {
 /* links */
 a:any-link {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
   overflow-wrap: break-word;
+  transition: text-decoration-color var(--transition-base);
 }
 
 a:hover {
   color: var(--link-hover-color);
-  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+a:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
 }
 
 /* buttons */
@@ -181,42 +264,64 @@ button {
   display: inline-block;
   max-width: 100%;
   margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border: 3px solid var(--color-blue);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: var(--button-font-weight);
+  font-size: var(--button-font-size);
+  line-height: 1.2;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--color-blue);
+  color: var(--color-white);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: var(--button-min-width);
+  transition: var(--button-transition);
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  box-shadow: var(--color-white) 0 0 0 2px inset;
   cursor: pointer;
+}
+
+a.button:focus-visible,
+button:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
 }
 
 button:disabled,
 button:disabled:hover {
   background-color: var(--light-color);
+  border-color: var(--light-color);
+  color: var(--color-gray-medium);
   cursor: unset;
+  box-shadow: none;
 }
 
+/* secondary button - outlined */
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  background-color: transparent;
+  border: 2px solid var(--color-blue);
+  border-radius: 9px;
+  color: var(--color-blue);
+  padding: 11px 8px;
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  box-shadow: none;
+  outline: 1px solid var(--color-blue);
+  outline-offset: -6px;
 }
 
 main img {
@@ -238,13 +343,13 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: var(--spacing-l) 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: auto;
-  padding: 0 24px;
+  padding: 0 var(--section-padding-inline);
 }
 
 main > .section:first-of-type {
@@ -253,14 +358,111 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 32px;
+    padding: 0 var(--section-padding-inline);
   }
 }
 
-/* section metadata */
+/* section metadata variants */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
-  padding: 40px 0;
+  padding: var(--spacing-l) 0;
+}
+
+/* Navy blue section */
+main .section.navy-blue {
+  background-color: var(--color-navy);
+  margin: 0;
+  padding: var(--spacing-l) 0;
+}
+
+main .section.navy-blue h1,
+main .section.navy-blue h2,
+main .section.navy-blue h3,
+main .section.navy-blue h4,
+main .section.navy-blue h5,
+main .section.navy-blue h6,
+main .section.navy-blue p,
+main .section.navy-blue li {
+  color: var(--color-white);
+}
+
+main .section.navy-blue a:any-link {
+  color: var(--color-white);
+}
+
+/* Dark section */
+main .section.dark {
+  background-color: var(--color-black);
+  margin: 0;
+  padding: var(--spacing-l) 0;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark h5,
+main .section.dark h6,
+main .section.dark p,
+main .section.dark li {
+  color: var(--color-white);
+}
+
+main .section.dark a:any-link {
+  color: var(--color-white);
+}
+
+/* Teal section */
+main .section.teal {
+  background-color: var(--color-teal);
+  margin: 0;
+  padding: var(--spacing-l) 0;
+}
+
+main .section.teal h1,
+main .section.teal h2,
+main .section.teal h3,
+main .section.teal h4,
+main .section.teal h5,
+main .section.teal h6,
+main .section.teal p,
+main .section.teal li {
+  color: var(--color-black);
+}
+
+/* Green section */
+main .section.green {
+  background-color: var(--color-green);
+  margin: 0;
+  padding: var(--spacing-l) 0;
+}
+
+main .section.green h1,
+main .section.green h2,
+main .section.green h3,
+main .section.green h4,
+main .section.green h5,
+main .section.green h6,
+main .section.green p,
+main .section.green li {
+  color: var(--color-white);
+}
+
+main .section.green a:any-link {
+  color: var(--color-white);
+}
+
+main .section.green a.button:any-link {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-green);
+}
+
+/* Disclosures / fine print */
+main .section ol {
+  font-size: var(--body-font-size-xs);
+  line-height: 1.6;
+  color: var(--color-gray-medium);
 }

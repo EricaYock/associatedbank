@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "http://localhost:8765/cleaned.html",
+  "path": "cleaned",
+  "timestamp": "2026-03-27T17:53:56.165Z",
+  "title": "Personal Checking Accounts",
+  "template": "product-detail",
+  "blocks": [
+    "hero-banner",
+    "columns-feature",
+    "cards-pricing",
+    "table-comparison",
+    "cards-benefit",
+    "columns-contact"
+  ]
+}
