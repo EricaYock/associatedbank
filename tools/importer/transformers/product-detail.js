@@ -190,7 +190,7 @@ function parseHeroBanner(element, { document }) {
     cellFrag.appendChild(heading);
   }
 
-  const cells = [[cellFrag]];
+  const cells = [['', '', cellFrag]];
   return createBlock(document, 'Hero Banner', cells);
 }
 
@@ -296,7 +296,7 @@ function parseCardsPricing(sectionEl, { document }) {
         cellFrag.appendChild(p);
       }
 
-      cells.push([cellFrag]);
+      cells.push(['', cellFrag]);
     });
 
     results.push(createBlock(document, 'Cards (pricing)', cells));
@@ -455,7 +455,7 @@ function parseCardsBenefit(sectionEl, { document }) {
         p.textContent = subHeadingP.textContent.trim();
         cellFrag.appendChild(p);
       }
-      cells.push([cellFrag]);
+      cells.push(['', cellFrag]);
     });
 
     results.push(createBlock(document, 'Cards (benefit)', cells));

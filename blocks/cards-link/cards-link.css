@@ -83,6 +83,7 @@
   margin-left: auto;
 }
 
-.cards.link .cards-card-image {
+.cards.link .cards-card-image,
+.cards.link > ul > li > .cards-card-body:first-child:empty {
   display: none;
 }

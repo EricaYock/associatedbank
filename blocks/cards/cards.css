@@ -108,6 +108,162 @@
   margin-left: auto;
 }
 
-.cards.link .cards-card-image {
+.cards.link .cards-card-image,
+.cards.link > ul > li > .cards-card-body:first-child:empty {
   display: none;
 }
+
+/* Cards Pricing variant - product comparison cards with green headers */
+/* stylelint-disable no-descending-specificity -- pricing variant is mutually exclusive with link */
+.cards.pricing > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  grid-template-columns: none;
+}
+
+@media (width >= 900px) {
+  .cards.pricing > ul {
+    flex-direction: row;
+  }
+}
+
+.cards.pricing > ul > li {
+  border: 2px solid var(--color-green);
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  flex: 1;
+}
+
+.cards.pricing .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0;
+}
+
+/* Green header band - tagline */
+.cards.pricing .cards-card-body > p:first-child {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 12px 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Product name heading */
+.cards.pricing .cards-card-body h3 {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  padding: 4px 12px 12px;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Benefits label */
+.cards.pricing .cards-card-body > p:nth-child(3) {
+  padding: 12px 16px 0;
+  margin: 0;
+}
+
+/* Benefits list */
+.cards.pricing .cards-card-body > ul {
+  padding: 4px 16px 0 40px;
+  margin: 0;
+  list-style: disc;
+}
+
+.cards.pricing .cards-card-body > ul > li {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin-bottom: 4px;
+}
+
+/* CTA button container - pushed to bottom */
+.cards.pricing .cards-card-body > .button-container {
+  margin-top: auto;
+  padding: 16px;
+  text-align: center;
+}
+
+.cards.pricing .cards-card-body .button-container a.button {
+  min-width: auto;
+  width: 100%;
+  max-width: 228px;
+}
+
+.cards.pricing .cards-card-image,
+.cards.pricing > ul > li > .cards-card-body:first-child:empty {
+  display: none;
+}
+
+/* stylelint-enable no-descending-specificity */
+
+/* Cards Benefit variant - icon/text grid cards */
+/* stylelint-disable no-descending-specificity -- benefit variant is mutually exclusive with link/pricing */
+.cards.benefit > ul {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+@media (width >= 900px) {
+  .cards.benefit > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cards.benefit > ul > li {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.cards.benefit .cards-card-body {
+  margin: 8px;
+}
+
+.cards.benefit .cards-card-body h3 {
+  color: var(--color-dark-green);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.cards.benefit .cards-card-body h3 a {
+  color: var(--color-dark-green);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.cards.benefit .cards-card-body h3 a:hover {
+  text-decoration-style: solid;
+}
+
+.cards.benefit .cards-card-body p {
+  color: var(--color-dark-green);
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.cards.benefit .cards-card-image,
+.cards.benefit > ul > li > .cards-card-body:first-child:empty {
+  display: none;
+}
+/* stylelint-enable no-descending-specificity */

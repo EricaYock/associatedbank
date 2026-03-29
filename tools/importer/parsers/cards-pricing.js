@@ -25,13 +25,18 @@ export default function parse(document, url) {
   // Header row with block name
   const headerRow = document.createElement('tr');
   const headerCell = document.createElement('th');
-  headerCell.colSpan = 1;
+  headerCell.colSpan = 2;
   headerCell.textContent = 'Cards (pricing)';
   headerRow.appendChild(headerCell);
   table.appendChild(headerRow);
 
   cards.forEach((card) => {
     const row = document.createElement('tr');
+
+    // Empty image column (card model requires 2 columns: image + text)
+    const emptyCell = document.createElement('td');
+    row.appendChild(emptyCell);
+
     const cell = document.createElement('td');
 
     // 1. Category label from .title-block p

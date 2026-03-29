@@ -208,16 +208,29 @@ function parseHeroBanner(element, { document }) {
   }
   const ctaLink = content.querySelector('.buttonContainer a');
 
-  const cellFrag = document.createDocumentFragment();
+  // Column 1: background image wrapped in <picture> (imageAlt collapsed into image via alt attribute)
+  const imageFrag = document.createDocumentFragment();
+  const heroImg = element.querySelector('.responsiveImageDesktop img') || element.querySelector('img');
+  if (heroImg) {
+    const picture = document.createElement('picture');
+    const newImg = document.createElement('img');
+    newImg.setAttribute('src', heroImg.getAttribute('src') || '');
+    newImg.setAttribute('alt', heroImg.getAttribute('alt') || '');
+    picture.appendChild(newImg);
+    imageFrag.appendChild(picture);
+  }
+
+  // Column 3: text content
+  const textFrag = document.createDocumentFragment();
   if (h1) {
     const heading = document.createElement('h1');
     heading.textContent = h1.textContent.trim();
-    cellFrag.appendChild(heading);
+    textFrag.appendChild(heading);
   }
   if (paragraphText) {
     const p = document.createElement('p');
     p.textContent = paragraphText;
-    cellFrag.appendChild(p);
+    textFrag.appendChild(p);
   }
   if (ctaLink) {
     const p = document.createElement('p');
@@ -225,10 +238,10 @@ function parseHeroBanner(element, { document }) {
     a.setAttribute('href', ctaLink.getAttribute('href') || '');
     a.textContent = ctaLink.textContent.trim();
     p.appendChild(a);
-    cellFrag.appendChild(p);
+    textFrag.appendChild(p);
   }
 
-  const cells = [[cellFrag]];
+  const cells = [[imageFrag], [textFrag]];
   const block = WebImporter.Blocks.createBlock(document, { name: 'Hero Banner', cells });
   element.replaceWith(block);
 }
@@ -357,7 +370,7 @@ function parseCardsLink(element, { document }) {
       p.textContent = body.textContent.trim();
       cellFrag.appendChild(p);
     }
-    cells.push([cellFrag]);
+    cells.push(['', cellFrag]);
   });
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'Cards (link)', cells });

@@ -6,7 +6,7 @@
  * Source: https://www.associatedbank.com/
  * Selector: #padded-container1 .columnarContainer
  * Model: 3 linked card items, each with header title, description body, and link.
- * Structure: N rows, 1 column each [heading + paragraph as link]
+ * Structure: N rows, 2 columns each [empty image | heading + paragraph as link]
  */
 export default function parse(element, { document }) {
   const cards = element.querySelectorAll('.squiggleButton');
@@ -44,7 +44,7 @@ export default function parse(element, { document }) {
       cellFrag.appendChild(p);
     }
 
-    cells.push([cellFrag]);
+    cells.push(['', cellFrag]);
   });
 
   const block = WebImporter.Blocks.createBlock(document, { name: 'Cards (link)', cells });

@@ -43,7 +43,7 @@
 }
 
 /* Text row - white content card overlay */
-.hero-banner > div:last-child {
+.hero-banner > div:last-child > div {
   background-color: var(--color-white);
   border-radius: 8px;
   padding: 32px;
@@ -91,7 +91,7 @@
     min-height: 450px;
   }
 
-  .hero-banner > div:last-child {
+  .hero-banner > div:last-child > div {
     padding: 40px;
     max-width: 520px;
   }
@@ -99,4 +99,28 @@
   .hero-banner h1 {
     font-size: 36px;
   }
+}
+
+/* Text-only hero variant - when image row cell is empty */
+.hero-banner:has(> div:first-child > div:empty) {
+  min-height: auto;
+  padding: 32px 24px;
+}
+
+.hero-banner > div:first-child > div:empty ~ div:last-child > div,
+.hero-banner:has(> div:first-child > div:empty) > div:last-child > div {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 24px 0;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+}
+
+.hero-banner:has(> div:first-child > div:empty) > div:last-child h1 {
+  color: var(--color-white);
+  border: 3px solid var(--color-white);
+  border-radius: var(--button-border-radius);
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: var(--heading-font-size-xl);
 }

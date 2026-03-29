@@ -65,3 +65,77 @@
 .table.block.bordered table td {
   border: 1px solid;
 }
+
+/* Comparison variant - green header, alternating rows, bordered cells */
+/* stylelint-disable no-descending-specificity -- comparison variant is mutually exclusive with bordered/striped */
+.table.comparison table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top: 1px solid #878787;
+  border-left: 1px solid #878787;
+  font-size: 16px;
+  background-color: var(--color-gray-light);
+}
+
+@media (width >= 900px) {
+  .table.comparison table {
+    font-size: 18px;
+  }
+}
+
+.table.comparison table thead tr {
+  border: none;
+}
+
+.table.comparison table thead th {
+  background-color: var(--color-green);
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  border-right: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+}
+
+@media (width >= 900px) {
+  .table.comparison table thead th {
+    font-size: 24px;
+  }
+}
+
+.table.comparison table tbody tr {
+  border: none;
+}
+
+.table.comparison table tbody tr:nth-child(even) {
+  background-color: var(--color-white);
+}
+
+.table.comparison table tbody tr:nth-child(odd) {
+  background-color: var(--color-gray-light);
+}
+
+.table.comparison table tbody td,
+.table.comparison table tbody th {
+  padding: 10px;
+  vertical-align: middle;
+  border-right: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+  color: var(--text-color);
+}
+
+.table.comparison table tbody th {
+  font-weight: 700;
+}
+
+.green .table.comparison table tbody td,
+.green .table.comparison table tbody th {
+  color: var(--text-color);
+}
+
+.green .table.comparison table tbody a:any-link {
+  color: var(--color-green);
+}
+/* stylelint-enable no-descending-specificity */

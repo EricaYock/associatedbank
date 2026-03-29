@@ -31,3 +31,61 @@
     order: unset;
   }
 }
+
+/* Feature variant - alternating image/text content blocks */
+.columns.feature .cards-card-body,
+.columns.feature > div > div:not(.columns-img-col) {
+  padding: 20px 0;
+}
+
+.columns.feature h2 {
+  margin-top: 0;
+}
+
+.columns.feature ul {
+  padding-left: 1.5em;
+  margin: 12px 0;
+}
+
+.columns.feature li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Contact variant - centered contact info layout */
+/* stylelint-disable no-descending-specificity -- contact variant is mutually exclusive with feature */
+.columns.contact {
+  text-align: center;
+}
+
+.columns.contact > div {
+  justify-content: center;
+}
+
+.columns.contact h2 {
+  font-size: var(--heading-font-size-xl);
+  margin-top: 0;
+}
+
+.columns.contact p {
+  margin: 4px 0;
+}
+
+.columns.contact a:any-link {
+  color: inherit;
+}
+
+.columns.contact .button-container {
+  margin-top: 12px;
+}
+
+.green .columns.contact a.button:any-link {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-green);
+}
+
+.green .columns.contact a.button:hover {
+  box-shadow: var(--color-green) 0 0 0 2px inset;
+}
+/* stylelint-enable no-descending-specificity */

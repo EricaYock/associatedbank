@@ -22,7 +22,7 @@ export default function parse(document, url) {
   const firstImg = firstBlip.querySelector('.blipImage img');
   const hasRealImages = !!firstImg;
 
-  const colCount = hasRealImages ? 2 : 1;
+  const colCount = 2; // card model always requires 2 columns (image + text)
 
   // Build the EDS block table
   const table = document.createElement('table');
@@ -40,9 +40,9 @@ export default function parse(document, url) {
     const anchor = blip.querySelector('a.imageLink');
     const linkHref = anchor ? (anchor.getAttribute('href') || '') : '';
 
+    // Column 1: image (empty if CSS-based icons)
+    const imgCell = document.createElement('td');
     if (hasRealImages) {
-      // Column 1: icon image
-      const imgCell = document.createElement('td');
       const img = blip.querySelector('.blipImage img');
       if (img) {
         const newImg = document.createElement('img');
@@ -50,10 +50,10 @@ export default function parse(document, url) {
         newImg.alt = img.getAttribute('alt') || '';
         imgCell.appendChild(newImg);
       }
-      row.appendChild(imgCell);
     }
+    row.appendChild(imgCell);
 
-    // Column (1 or 2): heading + description, wrapped in a link
+    // Column 2: heading + description, wrapped in a link
     const contentCell = document.createElement('td');
 
     const headingEl = blip.querySelector('p.heading');
