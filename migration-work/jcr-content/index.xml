@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent" jcr:title="Personal Banking - Associated Bank" modelFields="[jcr:title,jcr:description,keywords]">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/hero-banner-bg.png" imageAlt="Automated savings with mobile banking" model="hero-banner" modelFields="[image,imageAlt,text]" name="Hero Banner" text="&lt;p&gt;&lt;h1&gt;Automated Savings: Set it. Forget it.&lt;/h1&gt;&lt;/p&gt;&lt;p&gt;Select your goal &amp;#x26; how you want to save for it. Then watch it grow in the mobile app!&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/savings-and-investing#automatedsavings&quot;&gt;Start saving&lt;/a&gt;&lt;/p&gt;"></block>
+      </section>
+      <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Products that make the most of your money." titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/checking.png" text="&lt;p&gt;&lt;h3&gt;Checking&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Three checking account solutions designed to fit your lifestyle.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/personal-checking&quot;&gt;Checking&lt;/a&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/savings_homepage_icon.png" text="&lt;p&gt;&lt;h3&gt;Savings&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Start saving or grow with what you have. Open an account with as little as $10.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/savings-and-investing&quot;&gt;Savings&lt;/a&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/mortgage_90px.png" text="&lt;p&gt;&lt;h3&gt;Home Loans&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Easy online application for fixed, adjustable and government loans.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/loans/home-loans&quot;&gt;Home Loans&lt;/a&gt;&lt;/p&gt;"></item_2>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/heloc_90px.png" text="&lt;p&gt;&lt;h3&gt;HELOC&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Turn home equity into opportunity with payments as low as interest-only.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/loans/home-loans/heloc&quot;&gt;HELOC&lt;/a&gt;&lt;/p&gt;"></item_3>
+          <item_4 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/creditcards_90px.png" text="&lt;p&gt;&lt;h3&gt;Credit Cards&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Rewards, convenience, security. Special intro rates with Visa Platinum Card.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/credit-cards-and-payments/credit-cards&quot;&gt;Credit Cards&lt;/a&gt;&lt;/p&gt;"></item_4>
+          <item_5 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/persloans_90px.png" text="&lt;p&gt;&lt;h3&gt;Personal Loans&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Loans for what you need right now, up to $25,000.&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;/personal/loans/consumer-loans/personal-loans&quot;&gt;Personal Loans&lt;/a&gt;&lt;/p&gt;"></item_5>
+        </block>
+      </section_1>
+      <section_2 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[navy-blue]" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Our future is brighter together!" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;We&#x27;re excited to share that Associated has announced a merger withAmerican National. &lt;a href&#x3D;&quot;https://newsroom.associatedbank.com/releases/associated-banc-corp-to-accelerate-growth-strategy-with-acquisition-of-american-national-corporation?_gl&#x3D;1*15xdw9q*_gcl_au*MTQ5ODk5Njg2LjE3NjEwNzMwMDguMTQ5NzA3NTA2OC4xNzY0ODc2MzgwLjE3NjQ4NzYzNzk.&quot;&gt;Read more.&lt;/a&gt;&lt;/p&gt;"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/ab_anb_lockup_horz_w.png" imageAlt="Associated Bank | American National Bank"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_2>
+      <section_3 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[dark]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Tailored, local experience for your business and wealth" titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/business&quot;&gt;Business Banking&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Checking, credit &amp;#x26; more for businesses of any size, from small startups to established companies.&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/wealth&quot;&gt;Wealth Management&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Personalized planning plus next-level tools for empowering your financial future.&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/commercial&quot;&gt;Commercial&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Your trusted commercial banking partner for every phase of your business.&lt;/p&gt;"></item_2>
+        </block>
+      </section_3>
+      <section_4 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Find the mortgage that checks all the boxes." titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;Easy and convenient online mortgage application.&lt;/li&gt;
+                    &lt;li&gt;Truly local customer care that knows the landscape of
+                    your area&#x27;s real estate market.&lt;/li&gt;
+                    &lt;li&gt;Personal help to take you through your own unique
+                    homebuying process from pre-approval to closing.&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/personal/loans/home-loans" linkText="Get started today"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/w121648_homepage_index_feature_2_homelending.png" imageAlt="A family tours a home with a realtor"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_4>
+      <section_5 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[teal]" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/w121648_homepage_index_feature_3_deposits.png" imageAlt="A woman activates her new debit card"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Checking that keeps pace with you." titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;Three great accounts to choose from with benefits
+                    you&#x27;ll use every day.&lt;/li&gt;
+                    &lt;li&gt;Ways to avoid fees, protect yourself from overdrafts
+                    and even check your credit.&lt;/li&gt;
+                    &lt;li&gt;Family Banking for starting your kids on their own
+                    banking journey.&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/personal/personal-checking" linkText="Explore the possibilities"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_5>
+      <section_6 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Cards for everyday spending and credit-building." titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;Choices that match your favorite credit card style.&lt;/li&gt;
+                    &lt;li&gt;Options like cash back, travel rewards, low intro rates and
+                    even a faster way to pay down debt.&lt;/li&gt;
+                    &lt;li&gt;Safe and secure online application and account management.&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/personal/credit-cards-and-payments/credit-cards" linkText="Compare cards"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/home_page_image_update_copy.png" imageAlt="A man pays a florist with a credit card via the tap to scan feature"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_6>
+      <section_7 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/ab_digital_feature.png" imageAlt="Personal digital banking app screen"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Download Associated Bank Digital.¹" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ul&gt;
+                    &lt;li&gt;Seamless online and mobile banking packed with powerful features for money management.&lt;/li&gt;
+                    &lt;li&gt;Easy bill pay,² funds transfer and balance check with just a few taps.&lt;/li&gt;
+                    &lt;li&gt;Top-tier security features and real-time alerts across all your devices--anywhere, anytime.&lt;/li&gt;
+                    &lt;/ul&gt;&lt;p&gt;&lt;strong&gt;4.8 Stars | 65k reviews&lt;/strong&gt;&lt;/p&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="https://apps.apple.com/us/app/associated-bank-digital/id432205157" linkText=""/>
+              <button_1 sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="https://play.google.com/store/apps/details?id=com.associatedbank.mobilebanking" linkText=""/>
+            </col2>
+          </row1>
+        </columns>
+      </section_7>
+      <section_8 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[green]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Midwest-based Customer Care that meets you where you are." titleType="h2"/>
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="3">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/schedule-an-appointment" linkText="Schedule anappointment"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="/maps" linkText="Find a branchnear you"/>
+            </col2>
+            <col3 jcr:primaryType="nt:unstructured">
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="tel:800-236-8866" linkText="800-236-8866"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Talk to a customer care
+                    representativeMonday--Friday, 7 a.m.
+                    to 9 p.m. CTSaturday, 8 a.m. to 5
+                    p.m. CT&lt;/p&gt;&lt;p&gt;Automated telephone banking 24/7/365&lt;/p&gt;"/>
+            </col3>
+          </row1>
+        </columns>
+      </section_8>
+      <section_9 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Here for you through every stage in your life" titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/homepage_personal_article_01_img.jpeg" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/education/articles/personal-finance/healthcare-benefits-and-expenses/tips-for-a-start-to-new-plan&quot;&gt;Tips for your HSA and benefits accounts&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/homepage_personal_article_02_img.jpeg" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/education/articles/personal-finance/budgeting/building-an-emergency-fund&quot;&gt;How to start an emergency fund&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/homepage_personal_article_03_img.jpeg" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/education/articles/personal-finance/checking-and-savings/how-to-choose-a-checking-account-that-works-for-you&quot;&gt;How to choose a checking account&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;"></item_2>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" image="/content/dam/associatedbank/content/images/homepage_personal_article_04_img.jpeg" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/education/articles/personal-finance/budgeting/saving-for-something-big&quot;&gt;Saving for large purchases&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;"></item_3>
+        </block>
+      </section_9>
+      <section_10 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ol&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Associated Bank does not charge a fee to download our digital applications; however, transactional fees may apply. Carrier message and data rates may apply, check your carrier&#x27;s plan for details. Visit &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures/disclosures&quot;&gt;AssociatedBank.com/disclosures&lt;/a&gt; for Terms and Conditions for your service. (1406)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Our standard bill payment service, found within digital banking, is free, up to your available balance. Accelerated delivery services within the bill payment service have additional service charges. Please refer to the &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures/disclosures/online-banking-terms-and-conditions&quot;&gt;Terms and Conditions&lt;/a&gt; of the Bill Payment Service, the &lt;a href&#x3D;&quot;https://www.associatedbank.com/pdf/ConsumerDepositAccountFeeSchedule.pdf&quot;&gt;Consumer Deposit Account Fee Schedule&lt;/a&gt;, or the applicable &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures&quot;&gt;Checking Product Disclosure for details&lt;/a&gt;. (1064)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;/ol&gt;"/>
+      </section_10>
+      <section_11 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]"></section_11>
+    </root>
+  </jcr:content>
+</jcr:root>

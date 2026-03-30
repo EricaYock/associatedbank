@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
+  <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="core/franklin/components/page/v1/page" jcr:primaryType="cq:PageContent">
+    <root jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/root/v1/root">
+      <section sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" model="hero-banner" modelFields="[image,imageAlt,text]" name="Hero Banner" text="&lt;p&gt;&lt;h1&gt;Personal Checking Accounts&lt;/h1&gt;&lt;/p&gt;"></block>
+      </section>
+      <section_1 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[teal]" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/p9691_personal_checking_hero.jpeg" imageAlt=""/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;All  Associated Bank checking accounts include perks like
+                    overdraft grace zone,¹ access to more than 30,000
+                    surcharge-free ATMs,² Early Pay,³ exclusive cards and
+                    deals that match local teams and venues.&lt;/p&gt;"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_1>
+      <section_2 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Three great options. Unlimited possibilities." titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;NO MONTHLY MAINTENANCE FEES&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Access Checking&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Benefits&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt; &lt;li&gt;Personal checks available with exclusive designs&lt;/li&gt; &lt;li&gt;$25 minimum opening deposit&lt;/li&gt; &lt;/ul&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;https://open.associatedbank.com/?productCode&#x3D;337&amp;#x26;source&#x3D;%2Fpersonal%2Fpersonal-checking%23disclosures&quot;&gt;Open Access Checking&lt;/a&gt;&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;EASY DIRECT DEPOSIT&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Balanced Checking&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Benefits&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt; &lt;li&gt;All the benefits of Access Checking&lt;/li&gt; &lt;li&gt;Credit Monitor⁴&lt;/li&gt; &lt;li&gt;Free paperless statements&lt;/li&gt; &lt;/ul&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;https://open.associatedbank.com/?productCode&#x3D;324&amp;#x26;source&#x3D;%2Fpersonal%2Fpersonal-checking%23disclosures&quot;&gt;Open Balanced Checking&lt;/a&gt;&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;MOST BENEFITS&lt;/p&gt;&lt;p&gt;&lt;h3&gt;Choice Checking&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Benefits&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;ul&gt; &lt;li&gt;All the benefits of Balanced Checking&lt;/li&gt; &lt;li&gt;Earns interest⁵&lt;/li&gt; &lt;li&gt;Waived out-of-network ATM fees⁶&lt;/li&gt; &lt;li&gt;Free exclusive personal checks&lt;/li&gt; &lt;/ul&gt;&lt;/p&gt;&lt;p&gt;&lt;a href&#x3D;&quot;https://open.associatedbank.com/?productCode&#x3D;334&amp;#x26;source&#x3D;%2Fpersonal%2Fpersonal-checking%23disclosures&quot;&gt;Open Choice Checking&lt;/a&gt;&lt;/p&gt;"></item_2>
+        </block>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Unlock even more &lt;a href&#x3D;&quot;/personal/personal-checking/checking-accounts/choice-checking&quot;&gt;Choice Checking tiers&lt;/a&gt; and next-level benefits⁷ with a qualifying relationship balance of $50,000 or more.&lt;/p&gt;"/>
+      </section_2>
+      <section_3 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[green]" model="section" modelFields="[name,style]">
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" classes="comparison" filter="/personal/personal-checking/checking-account-benefits/bank-disclosures-and-information-for-consumers#4" model="table" modelFields="[filter]" name="Table"></block>
+      </section_3>
+      <section_4 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[green]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Find your financial fit." titleType="h2"/>
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;strong&gt;Compare Checking Accounts&lt;/strong&gt;"/>
+      </section_4>
+      <section_5 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="We&#x27;ve got more than banking products. We&#x27;ve got your back." titleType="h2"/>
+        <block sling:resourceType="core/franklin/components/block/v1/block" jcr:primaryType="nt:unstructured" filter="cards" name="Cards">
+          <item_0 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/personal/digital-banking/credit-monitor&quot;&gt;Credit Monitor⁴&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Get your free credit score, credit and fraud alerts and more—from anywhere. Free with Balanced and Choice Checking.&lt;/p&gt;"></item_0>
+          <item_1 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/personal/personal-checking/checking-account-benefits/direct-deposit&quot;&gt;Early Pay³ on direct deposits&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Early pay—as in up to 2 days early? With direct deposit, you got it! No hoops to jump through.&lt;/p&gt;"></item_1>
+          <item_2 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/personal/personal-checking/checking-account-benefits/overdraft-protection-service&quot;&gt;$50 Overdraft Grace Zone¹&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;No fee if you overdraw your checking by $50 or less. We’ve got you covered!&lt;/p&gt;"></item_2>
+          <item_3 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/personal/personal-checking/checking-account-benefits/overdraft-protection-service&quot;&gt;Free Overdraft Protection Transfers¹&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Need a funds fill-up? Automatically move money from your other Associated Bank accounts. No fee, no charge.&lt;/p&gt;"></item_3>
+          <item_4 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/personal/personal-checking/checking-account-benefits/atm-solutions&quot;&gt;30,000+ Surcharge-free ATMs²&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Find Associated Bank &amp;#x26; MoneyPass ATMs—from next door to nationwide.&lt;/p&gt;"></item_4>
+          <item_5 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/personal/digital-banking/money-monitor&quot;&gt;Money Monitor¹¹&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Set budgets. Track spending. Grow your money. Find it in Associated Bank Digital.&lt;/p&gt;"></item_5>
+          <item_6 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/education/articles/personal-finance/banking-basics/how-to-use-actionable-insights-desktop&quot;&gt;Actionable Insights¹¹&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;An unexpected bill? Subscription price changes? Get money-smart alerts, 24/7.&lt;/p&gt;"></item_6>
+          <item_7 jcr:primaryType="nt:unstructured" sling:resourceType="core/franklin/components/block/v1/block/item" name="Card" model="card" modelFields="[image,text]" text="&lt;p&gt;&lt;h3&gt;&lt;a href&#x3D;&quot;/education/articles/personal-finance/banking-basics/debit-card-control-mobile&quot;&gt;Debit Card Controls¹¹&lt;/a&gt;&lt;/h3&gt;&lt;/p&gt;&lt;p&gt;Lost your card? Lock it. Found your card? Unlock it. Real-time control from our app.&lt;/p&gt;"></item_7>
+        </block>
+      </section_5>
+      <section_6 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[teal]" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Money management from anywhere? Associated Bank Digital’s got you!" titleType="h2"/>
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="2">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;&lt;strong&gt;Money Monitor&lt;/strong&gt;&lt;br&gt;
+                    Set budgets. Track spending. Grow savings. Get
+                    money-smart alerts. Money Monitor empowers you to better
+                    oversee your finances wherever you go.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Pay and Transfer&lt;/strong&gt;&lt;br&gt;
+                    Easily manage your bills,¹² make transfers and even pay
+                    family and friends—from anywhere.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Customizable Alerts&lt;/strong&gt;&lt;br&gt;
+                    Get up-to-the-minute notifications of account activity
+                    with customized alert options.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Paperless Statements&lt;/strong&gt;&lt;br&gt;
+                    View your paperless statements from anywhere—no need to
+                    wait for the mail to get a rundown of your monthly
+                    account activity.&lt;/p&gt;"/>
+            </col1>
+            <col2 jcr:primaryType="nt:unstructured">
+              <image sling:resourceType="core/franklin/components/image/v1/image" jcr:primaryType="nt:unstructured" image="/content/dam/associatedbank/content/images/ab_digitial_screen_copy.png" imageAlt="Associated Bank Digital"/>
+            </col2>
+          </row1>
+        </columns>
+      </section_6>
+      <section_7 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="Want to open an account in person?" titleType="h2"/>
+        <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="https://www04.timetrade.com/app/abank/workflows/ABANK001/schedule?appointmentTypeGroupId=in_person&appointmentTypeId=p_checking" linkText="Schedule an Appointment"/>
+      </section_7>
+      <section_8 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" style="[green]" model="section" modelFields="[name,style]">
+        <columns sling:resourceType="core/franklin/components/columns/v1/columns" jcr:primaryType="nt:unstructured" rows="1" columns="1">
+          <row1 jcr:primaryType="nt:unstructured">
+            <col1 jcr:primaryType="nt:unstructured">
+              <title sling:resourceType="core/franklin/components/title/v1/title" jcr:primaryType="nt:unstructured" title="CONTACT US" titleType="h2"/>
+              <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;p&gt;Monday–Saturday&lt;/p&gt;&lt;p&gt;800-236-8866&lt;/p&gt;"/>
+              <button sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="tel:800-236-8866" linkText="800-236-8866"/>
+              <button_1 sling:resourceType="core/franklin/components/button/v1/button" jcr:primaryType="nt:unstructured" link="https://www04.timetrade.com/app/abank/workflows/ABANK001/schedule?appointmentTypeGroupId=in_person&appointmentTypeId=p_checking" linkText="Schedule an Appointment"/>
+            </col1>
+          </row1>
+        </columns>
+      </section_8>
+      <section_9 sling:resourceType="core/franklin/components/section/v1/section" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+        <text sling:resourceType="core/franklin/components/text/v1/text" jcr:primaryType="nt:unstructured" text="&lt;ol&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Overdraft grace zone – An Overdraft Fee will not be charged if account is overdrawn $50 or less for most personal checking accounts. For eligible Associated Choice Checking customers, no overdraft fee will be charged if account is overdrawn $100 or less for Platinum Choice, or $250 or less for Emerald Choice, and no overdraft fees will be charged for Emerald Private Choice. If an overdraft is paid by Associated Bank, a deposit must be made to bring the account back to a positive balance. Regular account requirements and fees for overdrafts will otherwise apply. Overdraft Protection Transfer service links your checking account with your other accounts at Associated Bank, including another checking account, savings account, money market account, Consumer Credit Card, Checking Reserve Line of Credit or Premier Line of Credit. There is no fee for this service, for more details on transaction limits and terms and conditions of these products, please refer to the &lt;a href&#x3D;&quot;https://www.associatedbank.com/pdf/ConsumerDepositAccountFeeSchedule.pdf&quot;&gt;Consumer Deposit Account Fee Schedule&lt;/a&gt;, applicable &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures&quot;&gt;Checking Product Disclosure&lt;/a&gt;, &lt;a href&#x3D;&quot;https://www.associatedbank.com/pdf/OverdraftFees.pdf&quot;&gt;What You Need to Know About Overdrafts and Overdraft Fees&lt;/a&gt;, &lt;a href&#x3D;&quot;https://www.associatedbank.com/pdf/ManagingOverdrafts.pdf&quot;&gt;Understanding Overdrafts and Your Options to Manage Fees&lt;/a&gt; or the &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures/disclosures/deposit-account-agreement&quot;&gt;Deposit Account Agreement&lt;/a&gt;. (1068)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Associated Bank and MoneyPass® ATM use is free for Associated Bank customers. ATM owners outside of the Associated and MoneyPass networks may charge a fee. Associated Bank may charge a fee for using an out-of-network ATM. International fees may apply. Review your account disclosure and fee schedule for more details. MoneyPass is a registered trademark of Fiserv Solutions, LLC or its affiliates. (1206)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;We may credit regularly occurring direct deposits up to two days early with Early Pay. This is available at Bank discretion for consumer checking accounts. We do not guarantee early availability of direct deposits. Eligible direct deposits to your account are based on when a payor notifies us they are sending you a credit. This may include direct deposit with your employer, government entity, or other organization that makes regular recurring payments to you. Ineligible deposits or credits to your account include person to person services, check or mobile deposits, or other online transfers. See the Deposit Account Agreement, &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures/disclosures/deposit-account-agreement&quot;&gt;Section 11.5&lt;/a&gt;, for full terms and conditions of Early Pay. (1464)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;To use Credit Monitor, eligible customers 18 years or older must log in to digital banking, activate the feature, and accept the terms and conditions. Information provided through Credit Monitor is obtained by Experian. For more information, visit the &lt;a href&#x3D;&quot;https://www.associatedbank.com/personal/digital-banking/credit-monitor&quot;&gt;Credit Monitor information page&lt;/a&gt;. (1485)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Interest on checking account is paid on the daily collected balance. (1298)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Associated Choice Checking customers receive two out-of-network ATM owner surcharge fee refunds per statement cycle, up to $20. Platinum Choice, Emerald Choice and Emerald Private Choice have unlimited refunds per statement cycle of ATM owner surcharge fees. (1299)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;You must meet and maintain enhanced Choice Checking benefit tier qualifications for Platinum Choice, Emerald Choice, or Emerald Private Choice, listed on the &lt;a href&#x3D;&quot;https://www.associatedbank.com/pdf/Choice-Checking-Fee-Schedule.pdf&quot;&gt;Associated Choice Checking Product Disclosure&lt;/a&gt;, to obtain enhanced benefits. Calculations are completed at the end of the calendar month, if qualifications are met benefits will start within 45 calendar days. (1419)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Avoid the $9 Associated Balanced Checking or $25 Associated Choice Checking monthly maintenance fee by meeting deposit balance minimums. Combined balances for qualification for maintenance fee waivers are determined by:&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Calculating the sum of the average daily balance of all deposit accounts (checking, savings, money market, CD/IRAs) with the same statement cycle. Deposit accounts with different statement cycles may not be fully considered in determining qualifications for fee waivers.&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;The presence of an HSA account or the presence of an investment account(s) including annuities, mutual funds and brokerage accounts for customers of Associated Investment Services (AIS).&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Ask your banker to link your accounts. Closing your checking account means applicable minimum balance requirements and maintenance fees will apply on the linked accounts. (1272)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;For more details, please refer to the applicable Product Disclosure for Funds Availability information. (1274)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Associated Bank does not charge a fee to download our digital applications; however, transactional fees may apply. Carrier message and data rates may apply, check your carrier’s plan for details. Visit &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures/disclosures&quot;&gt;AssociatedBank.com/disclosures&lt;/a&gt; for Terms and Conditions for your service. (1406)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                    &lt;p&gt;Our standard bill payment service, found within digital banking, is free, up to your available balance. Accelerated delivery services within the bill payment service have additional service charges. Please refer to the &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures/disclosures/online-banking-terms-and-conditions&quot;&gt;Terms and Conditions&lt;/a&gt; of the Bill Payment Service, the &lt;a href&#x3D;&quot;https://www.associatedbank.com/pdf/ConsumerDepositAccountFeeSchedule.pdf&quot;&gt;Consumer Deposit Account Fee Schedule&lt;/a&gt;, or the applicable &lt;a href&#x3D;&quot;https://www.associatedbank.com/forms-and-disclosures&quot;&gt;Checking Product Disclosure for details&lt;/a&gt;. (1064)&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;/ol&gt;&lt;ul&gt;
+                    &lt;li&gt;Calculating the sum of the average daily balance of all deposit accounts (checking, savings, money market, CD/IRAs) with the same statement cycle. Deposit accounts with different statement cycles may not be fully considered in determining qualifications for fee waivers.&lt;/li&gt;
+                    &lt;li&gt;The presence of an HSA account or the presence of an investment account(s) including annuities, mutual funds and brokerage accounts for customers of Associated Investment Services (AIS).&lt;/li&gt;
+                    &lt;/ul&gt;"/>
+      </section_9>
+    </root>
+  </jcr:content>
+</jcr:root>
