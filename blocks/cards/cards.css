@@ -26,6 +26,71 @@
   object-fit: cover;
 }
 
+/* Cards Product variant - icon grid with green headings matching original Associated Bank */
+/* stylelint-disable no-descending-specificity -- product variant is mutually exclusive with other variants */
+.cards.product {
+  padding: 40px;
+  background-color: var(--color-white);
+}
+
+.cards.product > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  grid-template-columns: none;
+}
+
+.cards.product > ul > li {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  width: calc(33.333% - 20px);
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards.product > ul > li img {
+  width: 90px;
+  height: 90px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.cards.product .cards-card-body {
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.cards.product .cards-card-body h3 {
+  color: var(--color-green);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.cards.product .cards-card-body p {
+  color: #595959;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+}
+
+/* Hide CTA buttons - original uses entire card as link */
+.cards.product .cards-card-body .button-container {
+  display: none;
+}
+
+.cards.product .cards-card-image,
+.cards.product > ul > li > .cards-card-body:first-child p:empty {
+  display: none;
+}
+
+/* stylelint-enable no-descending-specificity */
+
 /* Cards Link variant - horizontal white cards with green titles and chevron arrows */
 .cards.link > ul {
   display: flex;
@@ -87,7 +152,9 @@
   text-decoration: none;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .cards.link .cards-card-body p,
+/* stylelint-disable-next-line no-descending-specificity */
 .dark .cards.link .cards-card-body p {
   color: #595959;
   font-size: 16px;
