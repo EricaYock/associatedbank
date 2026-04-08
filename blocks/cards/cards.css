@@ -270,6 +270,9 @@
   min-width: auto;
   width: 100%;
   max-width: 228px;
+  white-space: normal;
+  text-overflow: clip;
+  overflow: visible;
 }
 
 .cards.pricing .cards-card-image,

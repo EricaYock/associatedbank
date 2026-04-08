@@ -105,6 +105,7 @@
 .hero-banner:has(> div:first-child > div:empty) {
   min-height: auto;
   padding: 32px 24px;
+  background-color: var(--color-white);
 }
 
 .hero-banner > div:first-child > div:empty ~ div:last-child > div,
@@ -117,10 +118,9 @@
 }
 
 .hero-banner:has(> div:first-child > div:empty) > div:last-child h1 {
-  color: var(--color-white);
-  border: 3px solid var(--color-white);
-  border-radius: var(--button-border-radius);
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: var(--heading-font-size-xl);
+  color: var(--color-green);
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
 }
