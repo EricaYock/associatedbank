@@ -213,8 +213,8 @@
   margin: 0;
 }
 
-/* Green header band - tagline */
-.cards.pricing .cards-card-body > p:first-child {
+/* Green header band - tagline (use :has(+h3) instead of :first-child for AEM Author compat) */
+.cards.pricing .cards-card-body > p:has(+ h3) {
   background-color: var(--color-green);
   color: var(--color-white);
   font-size: 16px;
