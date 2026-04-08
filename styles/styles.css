@@ -395,7 +395,7 @@ main .section.navy-blue a:any-link {
 /* Dark section */
 main .section.dark {
   background-color: var(--color-black);
-  background-image: url('https://www.associatedbank.com/content/dam/associatedbank/content/images/squiggle-bg.jpeg');
+  background-image: url('/content/dam/associatedbank/content/images/squiggle-bg.jpeg');
   background-size: cover;
   background-position: center;
   margin: 0;
