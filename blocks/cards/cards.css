@@ -181,6 +181,7 @@
 }
 
 /* Cards Pricing variant - product comparison cards with green headers */
+
 /* All selectors use descendant (not child) combinators for AEM Universal Editor compatibility */
 /* stylelint-disable no-descending-specificity -- pricing variant is mutually exclusive with link */
 .cards.pricing ul {
@@ -216,8 +217,8 @@
   margin: 0;
 }
 
-/* Green header band - tagline */
-.cards.pricing .cards-card-body p:has(+ h3) {
+/* Green header band - tagline (class added by cards.js for UE compatibility) */
+.cards.pricing .cards-pricing-tagline {
   background-color: var(--color-green);
   color: var(--color-white);
   font-size: 16px;

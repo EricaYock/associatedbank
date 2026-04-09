@@ -19,6 +19,17 @@ export default function decorate(block) {
     moveInstrumentation(img, optimizedPic.querySelector('img'));
     img.closest('picture').replaceWith(optimizedPic);
   });
+
+  /* Pricing variant: mark tagline paragraph with a class */
+  if (block.classList.contains('pricing')) {
+    ul.querySelectorAll('.cards-card-body h3').forEach((h3) => {
+      const prev = h3.previousElementSibling;
+      if (prev && prev.tagName === 'P' && !prev.querySelector('strong')) {
+        prev.classList.add('cards-pricing-tagline');
+      }
+    });
+  }
+
   block.textContent = '';
   block.append(ul);
 }
