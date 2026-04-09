@@ -260,15 +260,16 @@
 }
 
 /* CTA button container - pushed to bottom */
-.cards.pricing .cards-card-body > .button-container {
+.cards.pricing .cards-card-body .button-container {
   margin-top: auto;
   padding: 16px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cards.pricing .cards-card-body .button-container a.button {
   min-width: auto;
-  width: 100%;
   max-width: 228px;
   white-space: normal;
   text-overflow: clip;
