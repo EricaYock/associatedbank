@@ -181,25 +181,24 @@
 }
 
 /* Cards Pricing variant - product comparison cards with green headers */
-
-/* All selectors use descendant (not child) combinators for AEM Universal Editor compatibility */
 /* stylelint-disable no-descending-specificity -- pricing variant is mutually exclusive with link */
-.cards.pricing ul {
+
+/* Card container list - use > ul to target only the direct card list, not benefit lists */
+.cards.pricing > ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  grid-template-columns: none;
 }
 
 @media (width >= 900px) {
-  .cards.pricing ul {
+  .cards.pricing > ul {
     flex-direction: row;
   }
 }
 
-.cards.pricing li {
+/* Card items */
+.cards.pricing > ul > li {
   border: 2px solid var(--color-green);
   border-radius: 5px;
   box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
@@ -217,7 +216,7 @@
   margin: 0;
 }
 
-/* Green header band - tagline (class added by cards.js for UE compatibility) */
+/* Green header band - tagline (class added by cards.js) */
 .cards.pricing .cards-pricing-tagline {
   background-color: var(--color-green);
   color: var(--color-white);
@@ -247,11 +246,14 @@
   margin: 0;
 }
 
-/* Benefits list */
+/* Benefits list - scoped to avoid targeting card container ul */
 .cards.pricing .cards-card-body ul {
   padding: 4px 16px 0 40px;
   margin: 0;
   list-style: disc;
+  display: block;
+  flex-direction: unset;
+  gap: unset;
 }
 
 .cards.pricing .cards-card-body ul li {
@@ -262,6 +264,9 @@
   background: none;
   box-shadow: none;
   margin-bottom: 4px;
+  display: list-item;
+  flex: unset;
+  overflow: visible;
 }
 
 /* CTA button container - pushed to bottom, centered */
