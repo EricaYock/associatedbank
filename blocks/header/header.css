@@ -156,6 +156,12 @@ header .nav-brand {
 header nav .nav-brand img {
   width: 128px;
   height: auto;
+  filter: brightness(0) invert(1);
+}
+
+header nav .nav-brand a {
+  display: flex;
+  align-items: center;
 }
 
 /* sections */
