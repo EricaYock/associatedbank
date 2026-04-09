@@ -311,14 +311,25 @@ header nav .nav-tools a:any-link {
   font-weight: 500;
 }
 
+header nav .nav-tools .button-container {
+  display: inline;
+  margin: 0 8px;
+}
+
 header nav .nav-tools .button {
   margin: 0;
   border: none;
-  padding: 0.5em;
+  padding: 0;
   background: none;
-  line-height: 0;
+  line-height: 1;
   color: var(--color-white);
   min-width: unset;
+  font-size: var(--body-font-size-s);
+  font-weight: 500;
+  border-radius: 0;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
 }
 
 /* breadcrumbs */
